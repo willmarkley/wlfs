@@ -10,6 +10,22 @@
 sudo su root
 
 # Partition Disk
+# n       # Create new partition
+# p
+# 1
+# 
+# +6G
+# n       # Create swap partition
+# p
+# 2
+# 
+# 
+# t       # Change second partition to swap
+# 2
+# 82
+# a       # Make partition bootable
+# 1
+# w       # Write changes
 echo -e "n\np\n1\n\n+6G\nn\np\n2\n\n\nt\n2\n82\na\n1\nw" | fdisk /dev/sda
 
 # Format Partitions
