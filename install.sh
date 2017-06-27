@@ -6,9 +6,6 @@
 ## Attempts to partition sda1, sda2
 ## Attempts to install GRUB as current boot loader (MBR)
 
-# Become root
-sudo su root
-
 # Partition Disk
 # n       # Create new partition
 # p
