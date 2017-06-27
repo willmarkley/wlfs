@@ -22,7 +22,7 @@ mount -t ext4 /dev/sda1 /mnt/localdisk
 swapon /dev/sda2
 
 # Fetch WLFS
-wget https://
+wget http://willmarkley.com/wlfs-1.0.tar.gz
 
 # Extract WLFS onto disk
 tar -xzf wlfs-1.0.tar.gz -C /mnt/localdisk
