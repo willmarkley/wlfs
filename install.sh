@@ -49,26 +49,28 @@ mount -vt sysfs sysfs /mnt/localdisk/sys
 mount -vt tmpfs tmpfs /mnt/localdisk/run
 
 # Install GRUB
-chroot /mnt/localdisk /usr/bin/env -i              \
+(
+echo "grub-install /dev/sda"
+echo ""
+echo "cat > /boot/grub/grub.cfg << \"EOF\" "
+echo "# Begin /boot/grub/grub.cfg"
+echo "set default=0"
+echo "set timeout=5"
+echo ""
+echo "set root=(hd0,1)"
+echo ""
+echo "menuentry \"GNU/Linux, Linux 4.11.5-wlfs-1.0\" {"
+echo "        linux   /boot/vmlinuz-4.11.5-lfs-SVN-20170325 root=/dev/sda1 ro"
+echo "}"
+echo "EOF"
+echo ""
+echo "logout"
+) | chroot /mnt/localdisk /usr/bin/env -i              \
     HOME=/root TERM="$TERM" PS1='\u:\w\$ ' \
     PATH=/bin:/usr/bin:/sbin:/usr/sbin     \
     /bin/bash --login
 
-grub-install /dev/sda
 
-cat > /boot/grub/grub.cfg << "EOF"
-# Begin /boot/grub/grub.cfg
-set default=0
-set timeout=5
-
-set root=(hd0,1)
-
-menuentry "GNU/Linux, Linux 4.11.5-wlfs-1.0" {
-        linux   /boot/vmlinuz-4.11.5-lfs-SVN-20170325 root=/dev/sda1 ro
-}
-EOF
-
-logout
 
 # Unmount Virtual Filesystems
 umount -v /mnt/localdisk/dev/pts
