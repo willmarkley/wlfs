@@ -28,9 +28,16 @@ sudo /bin/sh install.sh
 
 Please file any issues on the issues tab of the project.  
 
+## Future Development
+
+Creating an offline installer by including the [gzip archive][4] and the installation script in the Live CD, for just one initial download.  See [Remastering TCL][6], [ISOLINUX][7], and [mkisofs][8] for more details.  
+
 
 [1]: http://www.linuxfromscratch.org/lfs/
 [2]: http://www.linuxfromscratch.org/lfs/view/stable/
 [3]: http://tinycorelinux.net/welcome.html
 [4]: .
 [5]: http://tinycorelinux.net/8.x/x86/release/Core-current.iso
+[6]: http://wiki.tinycorelinux.net/wiki:remastering
+[7]: http://www.syslinux.org/wiki/index.php?title=ISOLINUX
+[8]: http://www.linuxcommand.org/man_pages/mkisofs8.html
