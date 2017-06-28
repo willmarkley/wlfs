@@ -11,15 +11,18 @@ Build was completed on June 25, 2017.  All sources were compiled for *x86_64*.  
 
 WLFS uses a [Tiny Core Linux][3] Live CD to accomplish the installation.  The Live CD allows the network installation script to run.  **The WLFS installation script is intended ONLY for machines with no current partitions**.  For machines that are currently partitioned, a [gzip archive][4] is available for you to install to a partition on your machine.    
 
+### Network Installation
 1. Download [TCL Live CD][5]
 2. Boot Live CD in physical or virtual machine
 3. Press `[ENTER]` when asked to boot
-3. Enter the following commands at the prompt:
+4. Enter the following commands at the prompt:
 
 ```
 wget http://willmarkley.com/install.sh
 sudo /bin/sh install.sh
 ```
+
+5. Eject Live CD and boot machine
 
 ## Issues
 
