@@ -36,7 +36,7 @@ Creating an offline installer by including the [gzip archive][4] and the install
 [1]: http://www.linuxfromscratch.org/lfs/
 [2]: http://www.linuxfromscratch.org/lfs/view/stable/
 [3]: http://tinycorelinux.net/welcome.html
-[4]: .
+[4]: https://github.com/willmarkley/wlfs/releases/download/v1.0/wlfs-1.0.tar.gz
 [5]: http://tinycorelinux.net/8.x/x86/release/Core-current.iso
 [6]: http://wiki.tinycorelinux.net/wiki:remastering
 [7]: http://www.syslinux.org/wiki/index.php?title=ISOLINUX
