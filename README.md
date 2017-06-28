@@ -24,6 +24,11 @@ sudo /bin/sh install.sh
 
 5. Eject Live CD and boot machine
 
+```
+user:  root
+pass:  wlfs
+```
+
 ## Issues
 
 Please file any issues on the issues tab of the project.  
