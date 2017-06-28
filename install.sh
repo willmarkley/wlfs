@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 #### INSTALL WILL'S LINUX FROM SCRATCH ####
 
