@@ -29,6 +29,13 @@ user:  root
 pass:  wlfs
 ```
 
+## Customization
+
+The following files may need to be updated:
+```
+/etc/hosts, /etc/fstab, /etc/passwd, /etc/group, /etc/shadow, /etc/ld.so.conf, /etc/sysconfig/rc.site, /etc/sysconfig/network, and /etc/sysconfig/ifconfig.eth0
+```
+
 ## Issues
 
 Please file any issues on the issues tab of the project.  
