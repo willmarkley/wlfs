@@ -18,7 +18,8 @@ WLFS uses a [Tiny Core Linux][3] Live CD to accomplish the installation.  The Li
 4. Enter the following commands at the prompt:
 
 ```
-wget http://willmarkley.com/install.sh
+tce-load -wi openssl
+wget https://raw.githubusercontent.com/willmarkley/wlfs/master/install.sh
 sudo /bin/sh install.sh
 ```
 
