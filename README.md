@@ -37,6 +37,10 @@ The following files may need to be updated:
 /etc/hosts, /etc/fstab, /etc/passwd, /etc/group, /etc/shadow, /etc/ld.so.conf, /etc/sysconfig/rc.site, /etc/sysconfig/network, and /etc/sysconfig/ifconfig.eth0
 ```
 
+## Presentations
+
+This project has been presented to the Linux User Group at the University of Notre Dame.  More information on the talk can be found on the [ND LUG blog][9]
+
 ## Issues
 
 Please file any issues on the issues tab of the project.  
@@ -54,3 +58,4 @@ Creating an offline installer by including the [gzip archive][4] and the install
 [6]: http://wiki.tinycorelinux.net/wiki:remastering
 [7]: http://www.syslinux.org/wiki/index.php?title=ISOLINUX
 [8]: http://www.linuxcommand.org/man_pages/mkisofs8.html
+[9]: http://ndlug.org/post/will-markley-linux-from-scratch/
